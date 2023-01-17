@@ -1,12 +1,12 @@
 // recieves or returns = functions talking between themselves
-#include <stdio.h> //bring the standard input/output file = printf
+#include <stdio.h> //bring the standard input/output file
 
 void hello(void); // introduces "hello" function to c
 void greetings(void); //function intrduction or in C: function prototype
 void line(void);
 
-// in order: char, short, int, long (long long)
-// in order: float, double, long 
+// in order of least to greatest: char, short, int, long (long long)
+// in order of least to greatest: float, double, long 
 
 int main(void) {
 	// main is where the function begins, is mandatory
@@ -20,7 +20,7 @@ int main(void) {
 	num = value + 32; // the 25 is overwritten and replaced by the action on the right
 	hello();
 
-	printf("integer num is: %d, and float is: %f\n", num, fnum); // d = integer, f = decimal integer?
+	printf("integer num is: %d, and float is: %f\n", num, fnum); // d = integer, f = decimal floating point
 	greetings();
 	return 0;
 	// return = returns the integer
@@ -53,7 +53,7 @@ void line(void) {
 - variables = containers that hold numbers
 - int = normal sized integer
 - num or age for example holds numbers
-- backslash = special character
+- backslash is used for special characters
 - % = placeholder for number
 - whats happening to the right side flows into the left side (of = sign), left value must be settable
 - floating point numbers are not precise
