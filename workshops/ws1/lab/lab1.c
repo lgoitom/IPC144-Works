@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void title(void); //this is the prototype
+void title(void);
 void line(void);
 void info(void);
 
@@ -10,7 +10,7 @@ int main(void) {
 	info();
 }
 
-void title(void) { // this is the function
+void title(void) { 
 	printf("IPC144 NBB\t Workshop 1\t Part 1\n");
 }
 
