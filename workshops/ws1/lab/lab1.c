@@ -20,8 +20,8 @@ void line(void) {
 }
 
 void info(void) {
-	printf("Name: \n");
+	printf("Name:\n");
 	printf("\tLuwam Goitom-Worre\n");
-	printf("Email: \n");
+	printf("Email:\n");
 	printf("\tlgoitom-worre@myseneca.ca");
 }
