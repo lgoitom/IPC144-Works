@@ -12,7 +12,7 @@ int main(void) {
 }
 
 void title(void) { 
-	printf("IPC144 NBB\t Workshop 1\t Part 1\n");
+	printf("IPC144 NBB\tWorkshop 1\tPart 1\n");
 }
 
 void line(void) {
