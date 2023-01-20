@@ -8,6 +8,7 @@ int main(void) {
 	title();
 	line();
 	info();
+	return 0;
 }
 
 void title(void) { 
