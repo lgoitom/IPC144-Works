@@ -1,4 +1,5 @@
 // recieves or returns = functions talking between themselves
+#define _CRT_SECURE_NO_WARNINGS //no warning on stdio functions
 #include <stdio.h> //bring the standard input/output file
 
 void hello(void); // introduces "hello" function to c
@@ -57,6 +58,12 @@ void line(void) {
 - % = placeholder for number
 - whats happening to the right side flows into the left side (of = sign), left value must be settable
 - floating point numbers are not precise
+- %d = integer (whole number)
+- %lf = double float
+- %c = single characters
+- %f = float
+- & = address of
+
 */ 
 
 // for next class: READ week 2 notes
