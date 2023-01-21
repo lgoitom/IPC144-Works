@@ -8,6 +8,7 @@ int main(void) {
 	title();
 	line();
 	info();
+	line();
 	return 0;
 }
 
@@ -21,7 +22,7 @@ void line(void) {
 
 void info(void) {
 	printf("Name:\n");
-	printf("\tLuwam Goitom-Worre\n");
+	printf("\tLuwam Goitom-Worre--\n");
 	printf("Email:\n");
-	printf("\tlgoitom-worre@myseneca.ca");
+	printf("\tlgoitom-worre@myseneca.ca--\n");
 }
