@@ -1,5 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
+void line(char fill, int length);
 
 void rectangle(char leftTop, char top, char topRight, char right, char rightButtom, char buttom, char buttomLeft, char left, char fill, int width, int height) {
 	int i;
@@ -12,5 +13,14 @@ void rectangle(char leftTop, char top, char topRight, char right, char rightButt
 			putchar(top, 20);
 		}*/
 	}
-	for (i = )
+
+}
+
+
+void line(char fill, int length) {
+	int i;
+
+	for(i = 0; i < length; i++) {
+		putchar(fill);
+	}
 }
