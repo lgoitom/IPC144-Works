@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{ecf739dd-7449-4e30-8666-62b3fa43fa3a}</ProjectGuid>
-    <RootNamespace>ws2</RootNamespace>
+    <ProjectGuid>{ad78f895-5eca-45fe-91f9-119a42a549a2}</ProjectGuid>
+    <RootNamespace>DIY</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,8 +127,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="draw.c" />
     <ClCompile Include="main.c" />
-    <ClCompile Include="shopping.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
