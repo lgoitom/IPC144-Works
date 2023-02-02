@@ -2,17 +2,28 @@
 #include <stdio.h>
 void line(char fill, int length);
 
-void rectangle(char leftTop, char top, char topRight, char right, char rightButtom, char buttom, char buttomLeft, char left, char fill, int width, int height) {
+void rectangle(char leftTop, char top, char topRight, 
+	           char right, char rightButtom, char buttom, 
+	           char buttomLeft, char left, char fill, 
+	           int width, int height) {
 	int i;
+	
+	putchar(leftTop);
+	line(top, width - 2);
+	putchar(topRight);
+	putchar('\n');
 
-	for (i = 0; i < leftTop; i++) {
-		if (0 < i < 1) {
-			putchar(leftTop);
-		}
-		/*else {
-			putchar(top, 20);
-		}*/
+	for (i = 0; i < height - 2; i++) {
+		putchar(left);
+		line(fill, width - 2);
+		putchar(right);
+		putchar('\n');
 	}
+	
+	putchar(buttomLeft);
+	line(buttom, width - 2);
+	putchar(rightButtom);
+	putchar('\n');
 
 }
 
