@@ -1,4 +1,4 @@
-#include <stdio.h>
+/*#include <stdio.h>
 
 void title(void);
 void line(void);
@@ -25,4 +25,4 @@ void info(void) {
 	printf("\tLuwam Goitom-Worre--\n");
 	printf("Email:\n");
 	printf("\tlgoitom-worre@myseneca.ca--\n");
-}
+}*/

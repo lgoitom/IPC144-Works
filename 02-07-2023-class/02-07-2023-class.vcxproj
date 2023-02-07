@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{b6a55eb5-363e-47b2-980b-78a448fd9815}</ProjectGuid>
-    <RootNamespace>lab</RootNamespace>
+    <ProjectGuid>{0ac12108-f2ad-41d1-a3da-69785f4246ee}</ProjectGuid>
+    <RootNamespace>My02072023class</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,8 +127,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="diy1.c" />
-    <ClCompile Include="lab1.c" />
+    <ClCompile Include="prg.c" />
+    <ClCompile Include="prgc.c" />
+    <ClCompile Include="utils.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="abc.xyz" />
+    <None Include="hee.haw" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="utils.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
