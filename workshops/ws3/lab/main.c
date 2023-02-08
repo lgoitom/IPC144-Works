@@ -45,7 +45,7 @@ int main(void) {
 }*/
 
 void prnGrade(int mark) {
-	printf("the grade is: %d\n", mark);
+	int average; 
 	if (mark >= 0 && mark < 50) {
 		printf("F");
 	}

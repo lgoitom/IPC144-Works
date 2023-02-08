@@ -88,12 +88,12 @@ int getAverage(int NumberOfStudents) {
 	return sum, average;
 }
 
-void printReport(int NumberOfStudents, int average) {
+void printReport(int NumberOfStudents, int average, int mark) {
 	//int sum;
 	//int average;
 
 	printf("Number of students: %d\n", NumberOfStudents);
-	printf("Class average: %d", average);
+	printf("Class average: %d (%c)", average, mark);
 }
 
 /*int getStudentMarks(int NumberOfStudents) {

@@ -22,13 +22,15 @@ int getInt(void) {
 	char ch;
 	while (!done) {
 		
-		if (scanf("%d", &value) == 1) {   // \n
+		if (scanf("%d", &value) == 1) {  
 			ch = getchar();
-			// if ch is not new line,
-			//       print error (only an int)
-			//		   flush keyboard
-		   // else:
-			done = 1;
+			if (ch != '\n') {
+				printf("Enter only an integer, try again: ");
+				flushKey();
+			}
+			else {
+				done = 1;
+			}
 		}
 		else if (scanf("%d", &value) != 1){
 			flushKey();
@@ -37,8 +39,6 @@ int getInt(void) {
 	}
 	return value;
 
-	/*it still prints user input integer even when other characters r inputed.ex: user input : 10abc, program output : you entered 10.
-	* also doesnt allow user to input integer from 10 to 20 when another character is inputed*/
 }
 
 int getIntMM(int min, int max) {
@@ -51,8 +51,49 @@ int getIntMM(int min, int max) {
 			done = 1;
 		}
 		else {
-			printf("Invalid Integer, try again: "); // fix the error message....
+			printf("[10<=Number<=20], try again: "); 
 		}
 	}
 	return value;
+}
+
+double getDouble(void) {
+	double dvalue;
+	int done = 0;
+	char ch;
+
+	while (!done) {
+		if (scanf("%lf", &dvalue) == 1) {
+			ch = getchar();
+			if (ch != '\n') {
+				printf("Enter only a double, try again: ");
+				flushKey();
+			}
+			else {
+				done = 1;
+			}
+		}
+		else if (scanf("%lf", &dvalue) != 1) {
+			flushKey();
+			printf("Invalid Double, try again: ");
+		}
+	}
+	return dvalue;
+
+}
+
+double getDoubleMM(double min, double max) {
+	double dvalue;
+	int done = 0;
+
+	while (!done) {
+		dvalue = getDouble();
+		if (min <= dvalue && max >= dvalue) {
+			done = 1;
+		}
+		else {
+			printf("[10.100<=Number<=20.100], try again: ");
+		}
+	}
+	return dvalue;
 }
