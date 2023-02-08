@@ -66,7 +66,7 @@ double getDouble(void) {
 		if (scanf("%lf", &dvalue) == 1) {
 			ch = getchar();
 			if (ch != '\n') {
-				printf("Enter only a double, try again: ");
+				printf("Enter only a Double, try again: ");
 				flushKey();
 			}
 			else {
