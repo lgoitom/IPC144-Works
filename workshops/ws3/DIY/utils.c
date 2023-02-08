@@ -92,7 +92,7 @@ double getDoubleMM(double min, double max) {
 			done = 1;
 		}
 		else {
-			printf("[10.100<=Number<=20.100], try again: ");
+			printf("[10.100<=Number<=20.900], try again: ");
 		}
 	}
 	return dvalue;
