@@ -1,6 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include "utils.h"
+
 char getSingleChar(void) {
    char ch = getchar();
    flushKey();

@@ -1,5 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
+#include "utils.h"
+#include "rental.h"
 
 void menu(void) {
     printf("Equipment     Price   SKU\n");
