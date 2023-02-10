@@ -4,14 +4,14 @@
 #include "rental.h"
 
 void menu(void) {
-    printf("Equipment     Price   SKU\n");
+    printf("Equipment     Price     SKU\n");
     printf("----------------------------\n");
-    printf("Skis          12.30   101\n");
-    printf("Boots         10.45   102\n");
-    printf("Poles         2.99    203\n");
-    printf("Helmet        3.99    204\n");
-    printf("Winter Pants  14.30   305\n");
-    printf("Winter Jacket 20.55   306\n");
+    printf("Skis          12.30     101\n");
+    printf("Boots         10.45     102\n");
+    printf("Poles         2.99      203\n");
+    printf("Helmet        3.99      204\n");
+    printf("Winter Pants  14.30     305\n");
+    printf("Winter Jacket 20.55     306\n");
     printf("----------------------------\n");
 }
 double rent(int sku) {
@@ -57,7 +57,11 @@ void rental(void) {
     do {
         printf("Enter Sku or 0 to exit: ");
         skuNum = getInt();
-        price += rent(skuNum);
+
+        if (skuNum != 0) {
+            price += rent(skuNum);
+        }
+        
     } while (skuNum != 0);
 
     printf("----------------------------\n");
