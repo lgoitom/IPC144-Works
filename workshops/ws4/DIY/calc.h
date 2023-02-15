@@ -1,3 +1,3 @@
-double calc(void);
-double operations(double num);
-char symbol(char question);
+int calc(void);
+void operations(void);
+char symbol();
