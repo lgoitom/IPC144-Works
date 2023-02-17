@@ -17,6 +17,7 @@
 ***********************************************************************/
 #include <stdio.h>
 #include "calc.h"
+#include "utils.h"
 
 int main(void) {
    printf("My Simple Calculator\n"
@@ -36,7 +37,7 @@ int main(void) {
           "To exit press <ENTER> only\n"
           "-------------------------\n");
 
-   while(????);
+   while (calc());
    printf("Goodbye!\n");
    return 0;
 }

@@ -18,7 +18,7 @@
 #include "utils.h"
 char getSingleChar(void) {
    char ch = getchar();
-   flushKey();
+   //flushKey();
    return ch;
 }
 int getInt(void) {
