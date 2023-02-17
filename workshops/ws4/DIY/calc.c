@@ -69,6 +69,6 @@ void operations(void) {
         line('-', length - 1);
         break;
     default:
-        printf("'%c' is not a valid operation (only +, -, /, x, %%, and ^ are acceptable)\n", oper);
+        printf("'%c' is not a valid operation, (only +,-,/,x,%% and ^ are acceptable)\n", oper);
     }
 }
