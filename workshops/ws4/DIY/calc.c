@@ -17,7 +17,7 @@ int calc(void) {
         }
         else if (ch != '?') {
             flushKey();
-            printf("Invalid Command!\n[Question Mark][First Number][Operation][Second Number]<ENTER>\n");
+            printf("Invalid Command!\n[Question mark][First Number][Operation][Second Number]<ENTER>\n");
 
         }
         else {
