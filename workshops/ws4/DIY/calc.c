@@ -60,11 +60,17 @@ void operations(void) {
         line('-', length - 1);
         break;
     case '^':
-        res = firstNum;
+        if (secondNum != 0) {
+            int i;
+            for (i = 0; i < (long)secondNum; i++) {
+                res *= firstNum;
+            }
+        }
+        /*res = firstNum;
         while (secondNum > 1) {
             res *= firstNum;
             secondNum--;
-        }
+        }*/
         length = printf("%.3lf\n", res);
         line('-', length - 1);
         break;
