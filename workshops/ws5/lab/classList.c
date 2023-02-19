@@ -10,7 +10,7 @@ void printReport(const char subjectCode[], const int studentNumbers[],
 	int lowest = marks[0];
 	int i;
 	int totalMarks = 0;
-	int counter = 0;
+	
 	printf("SUBJECT MARKS REPORT!\n");
 	printf("  +---------------+\n");
 	printf("  | %-14s|\n", subjectCode);
