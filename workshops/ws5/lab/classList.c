@@ -42,15 +42,6 @@ void printReport(const char subjectCode[], const int studentNumbers[],
 		
 		
 	}
-	
-	
-	
-	
-	
-	
-	
-
-	
 	char avg[10] = "Average";
 	char max[10] = "Highest";
 	char min[10] = "Lowest";
