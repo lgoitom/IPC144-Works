@@ -10,7 +10,7 @@ void subjectMarksReport(void) {
 	int mark[50];
 	int studentNumber[50];
 	int rowNum;
-	int numbers;
+
 
 	printf("Enter subject Name: ");
 	scanf("%s", subjectName);
