@@ -16,9 +16,13 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include "utils.h"
-char getSingleChar(void) {
+char getChar(void) {
    char ch = getchar();
-   //flushKey();
+   return ch;
+}
+char getCharNFlush(void) {
+   char ch = getchar();
+   flushKey();
    return ch;
 }
 int getInt(void) {
@@ -50,16 +54,16 @@ void line(char fill, int len) {
    }
    if(len > 0) putchar('\n');
 }
+void lineln(char fill, int len) {  // incase you want newline to get printed.
+   int i;
+   for(i = 0; i < len; i++) {
+      putchar(fill);
+   }
+   putchar('\n');
+}
 int yes(void) {
-   int res;
    char resp;
    printf("(Y)es or (N)o: ");
-   resp = getSingleChar();
-   if (resp == 'Y' || resp == 'y') {
-      res = 1;
-   }
-   else {
-      res = 0;
-   }
-   return res;
+   resp = getCharNFlush();
+   return (resp == 'Y' || resp == 'y'); // same as using if, since truth and falsehood are needed
 }

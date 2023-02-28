@@ -1,3 +1,7 @@
+// add different version of the same function when needed
+// remove commented codes
+// remove unwanted funciton prototypes.
+
 #define _CRT_SECURE_NO_WARNINGS
 
 #include <stdio.h>

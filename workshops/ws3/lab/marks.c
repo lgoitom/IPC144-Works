@@ -1,3 +1,4 @@
+// remove all the debugging or commented code before submssion
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
@@ -85,7 +86,8 @@ int getAverage(int NumberOfStudents) {
 		printf("%d> ", counter + 1);
 		scanf("%d", &mark);
 	}*/
-	return sum, average;
+	//return sum, average;  /// incorrect
+	return average;
 }
 
 void printReport(int NumberOfStudents, int average, int mark) {

@@ -33,10 +33,10 @@ void subjectMarksReport(void) {
 void printReport(const char subjectCode[], const int studentNumbers[],
 	const int marks[], int noOfStudents) {
 
-	int average;
+	int average=0;
 	int highest = marks[0];
 	int lowest = marks[0];
-	int i;
+	int i=0;
 	int totalMarks = 0;
 
 	printf(" SUBJECT MARKS REPORT!\n");
@@ -57,7 +57,7 @@ void printReport(const char subjectCode[], const int studentNumbers[],
 	printf(" +---+--------+------+\n");
 	for (i = 0; i < noOfStudents; i++) {
 		totalMarks += marks[i];
-		average = totalMarks / noOfStudents;
+//		average = totalMarks / noOfStudents;  // wasting computer time by repeating what can be done only once
 
 		if (highest < marks[i]) {
 			highest = marks[i];
@@ -67,14 +67,13 @@ void printReport(const char subjectCode[], const int studentNumbers[],
 			lowest = marks[i];
 		}
 	}
-	char avg[10] = "Average";
-	char max[10] = "Highest";
-	char min[10] = "Lowest";
-	printf(" | %-11s|", avg);
+	average = totalMarks / noOfStudents;  // do
+
+	printf(" | %-11s|", "Average");
 	printf("%5d |\n", average);
-	printf(" | %-11s|", max);
+	printf(" | %-11s|", "Highest");
 	printf("%5d |\n", highest);
-	printf(" | %-11s|", min);
+	printf(" | %-11s|", "Lowest");
 	printf("%5d |\n", lowest);
 	printf(" +------------+------+\n");
 }
